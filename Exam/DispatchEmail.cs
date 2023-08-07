@@ -29,7 +29,7 @@ namespace ImtihonForFirstMonth
                 var mail = new MailMessage(CredentialAddress, receiverEmail);
                 mail.Subject = "Siz muvaffaqiyatli registratsiyadan o'tdingiz";
                 mail.Body = "Hurmatli {{User}}, siz sistemadan muvaffaqiyatli o'tdingiz Tabriklaymiz".Replace("{{User}}", name);
-                var smtpClient = new SmtpClient("smtp.gmail.com", 587); // Replace with your SMTP server address and port
+                var smtpClient = new SmtpClient("smtp.gmail.com", 587); // 
                 smtpClient.Credentials = new NetworkCredential(CredentialAddress, CredentialPassword);
                 smtpClient.EnableSsl = true;
 
